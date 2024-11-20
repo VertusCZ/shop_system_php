@@ -1,0 +1,165 @@
+
+
+ body {
+background-color: #F8F8FF;
+font-family: 'Open Sans';
+}
+
+
+.sidebar {
+  width: 270px;
+  top: 109px;
+  margin: 0;
+  padding: 0;
+  background-color: #b3ffff;
+  position: absolute;
+  height: 125%;
+  border-right:  1px solid #A9A9A9; 
+  border-bottom: 1px solid #A9A9A9;
+  border-bottom-right-radius: 8px;
+  overflow: auto;
+}
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overflow: auto;
+  transform-origin: top;
+}
+
+
+li a {
+  display: block;
+  border-bottom: 1px solid  #A9A9A9;
+  color: #000;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #00e6e6;
+  color: white;
+  padding: 8px 16px;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.vypis_komponentu{
+   margin-left: 370px;
+   overflow: hidden;
+ }
+.komponent {
+  display: inline-block;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  width:430px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 1%; 
+  margin-bottom:  2%;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.komponent .zakladni_info, .komponent .detailni_info {
+  float: left;
+  margin-right: 10px;
+} 
+
+.komponent img {
+  background-color: white;
+  border-spacing: 2px;
+}
+
+.topnav i[class="fa fa-bars"] {
+  float: left;
+  display: block;
+  color: black;
+  margin-top: 2px;
+  text-align: center;
+  padding: 25px 16px;
+  font-size:20px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover:not(.active) {
+  background-color:  #555;
+  color: #ddd;
+  border-radius: 8px;
+}
+.topnav a.prehled {
+  margin-right:  -40px;
+  
+}
+.topnav a.neprihlasen{
+  margin-right:  -140px;
+}
+
+.topnav a.active {
+  margin-left:  35%;
+  color: black;
+  padding: 14px 50px;
+  font-size: 30px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 20px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 20px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+h2{
+  border-top: 1px solid#ccc; 
+  padding-top: 5px;
+}
+
